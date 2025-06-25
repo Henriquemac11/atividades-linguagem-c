@@ -3,19 +3,19 @@
 #include <stdio.h>
 
 int main() {
-    int numero, digito, soma = 0;
+    int num, d, soma = 0;
 
     printf("Digite um número inteiro: ");
-    scanf("%d", &numero);
+    scanf("%d", &num);
 
-    if (numero < 0) {
-        numero = -numero;
+    if (num < 0) {
+        num = -num;
     }
 
-    while (numero > 0) {
-        digito = numero % 10;
-        soma += digito * digito;
-        numero /= 10;
+    while (num > 0) {
+        d = num % 10;
+        soma += d * d;
+        num /= 10;
     }
 
     printf("A soma dos quadrados dos dígitos é: %d\n", soma);
